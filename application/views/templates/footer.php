@@ -23,14 +23,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    <!-- DataTables -->
-	<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" charset="uts-8"></script>
-	<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" charset="uts-8"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
-  	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
-    <script src="<?= base_url('assets/js/daftar.js') ?>"></script>
+    <!-- DataTables -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" charset="uts-8"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" charset="uts-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.10/dist/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
+    <script src=""></script>
     </body>
 
     </html>
