@@ -28,7 +28,7 @@
 
     <!-- ----------------------------------- Navbar ----------------------------------- -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1eb2a6;">
-        <a class="navbar-brand text-light logo-navbar" href="" width="120"></a>
+        <a class="navbar-brand text-light logo-navbar" href=""><img src="" width="120"></a>
         <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
         </button>

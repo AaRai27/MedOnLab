@@ -1,0 +1,84 @@
+body {
+    background-color: #fff;
+    height: 100%;
+}
+
+.why-us {
+    h5 {
+        font-family: 'Letter Gothic Std', sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+}
+
+.logo-navbar {
+    padding-top: 1px;
+}
+
+.top-home-content {
+    // min-height: 400px;
+    margin-bottom: 40px;
+}
+
+.row-content-home {
+    height: 900px;
+}
+
+.content-home-right {
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.card-alur {
+    max-height: 40px;
+    margin-top: 5px;
+}
+
+.content-how {
+    max-height: 90px;
+}
+
+.text-news {
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.footer-bawah {
+    margin-top: 50px;
+}
+
+.why-us-content {
+    font-weight: 400;
+}
+
+.about-us {
+    border-radius: 10px;
+
+    .text-about-us {
+        margin-top: 20px;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    .text-purpose-us h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .logo-about-us {
+        margin-top: -21vw;
+        margin-left: 53vw;
+
+    }
+
+    .logo-about-us-sm {
+        margin-top: 1vw;
+        margin-left: 10vw;
+
+    }
+}
