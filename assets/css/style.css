@@ -1,164 +1,174 @@
 body {
-  background-color: #fff;
-  height: 100%;
+	background-color: #fff;
+	height: 100%;
 }
 
 .why-us h5 {
-  font-family: 'Letter Gothic Std', sans-serif;
-  font-size: 30px;
-  font-weight: bolder;
+	font-family: 'Letter Gothic Std', sans-serif;
+	font-size: 30px;
+	font-weight: bolder;
 }
 
 .logo-navbar {
-  padding-top: 1px;
+	padding-top: 1px;
 }
 
 .top-home-content {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .row-content-home {
-  height: 900px;
+	height: 900px;
 }
 
 .content-home-right {
-  margin-left: 5px;
-  margin-bottom: 30px;
+	margin-left: 5px;
+	margin-bottom: 30px;
 }
 
 .card-alur {
-  max-height: 40px;
-  margin-top: 5px;
+	max-height: 40px;
+	margin-top: 5px;
 }
 
 .content-how {
-  max-height: 90px;
+	max-height: 90px;
 }
 
 .text-news h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .footer-bawah {
-  margin-top: 50px;
+	margin-top: 50px;
 }
 
 .why-us-content {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 .about-us {
-  border-radius: 10px;
+	border-radius: 10px;
 }
 
 .about-us .text-about-us {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .about-us .text-about-us h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .about-us .text-purpose-us h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .about-us .logo-about-us {
-  margin-top: -21vw;
-  margin-left: 53vw;
+	margin-top: -21vw;
+	margin-left: 53vw;
 }
 
 .about-us .logo-about-us-sm {
-  margin-top: 1vw;
-  margin-left: 10vw;
+	margin-top: 1vw;
+	margin-left: 10vw;
 }
-
 
 
 
 /* Bagian View Hasil */
 
-.box{
+.box {
 	text-align: center;
 	width: 750px;
 	box-sizing: border-box;
 	position: relative;
 	margin-top: 80px;
 }
+
 /* Bagian View Hasil */
 
 
 
 /* Bagian Registrasi */
-.form-registrasi {
-	margin-top: 15px;
-	margin-bottom: 10px;
-	height: 40vw;
-	border-radius: 10px;
-	/* background-color: black; */
-}
+/* .form-registrasi {
+	/* margin-top: 15px; */
+/* margin-bottom: 10px; */
+/* height: 40vw; */
+/* border-radius: 10px; */
+/* background-color: black; 
+} */
+
 /* Bagian Registrasi */
 
 
 
 /* Bagian Login */
-.kotak{
-    width: 450px ;
-    background: #1eb2a6;
-    border-radius: 5px;
-    margin: 200px auto;
-    padding: 20px;
-    text-align: center;
-    box-sizing: border-box; 
-    color: white;
+.kotak {
+	width: 450px;
+	background: #1eb2a6;
+	border-radius: 5px;
+	margin: 200px auto;
+	padding: 20px;
+	text-align: center;
+	box-sizing: border-box;
+	color: white;
 }
-.kotak:hover{
-    box-shadow: 4px 5px #888888;
+
+.kotak:hover {
+	box-shadow: 4px 5px #888888;
 }
-.kotak .kotak-header{
-    color: white;
-    border-bottom: 3px solid #D1D1D1FF;
+
+.kotak .kotak-header {
+	color: white;
+	border-bottom: 3px solid #D1D1D1FF;
 
 }
-.kotak .form-group{
-    margin-bottom: 20px;
-    position: relative;
-    padding-top: 20px;
+
+.kotak .form-group {
+	margin-bottom: 20px;
+	position: relative;
+	padding-top: 20px;
 }
-.kotak .form-group input{
-    width: 100%;
-    padding: 10px 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 3px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 5px;
+
+.kotak .form-group input {
+	width: 100%;
+	padding: 10px 10px;
+	font-size: 16px;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 3px solid #ddd;
+	margin-bottom: 10px;
+	border-radius: 5px;
 }
-.kotak .form-group input:hover{
-    border-bottom: 3px solid #76c2d6;
+
+.kotak .form-group input:hover {
+	border-bottom: 3px solid #76c2d6;
 }
-.kotak .form-group input:focus{
-    background: #76c2d6;
+
+.kotak .form-group input:focus {
+	background: #76c2d6;
 }
-.kotak .form-group button{
-    padding: 5px 10px;
-    background: #76c2d6;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 3px;
-    width: 80px;
-    transition-duration: 0.5s;
+
+.kotak .form-group button {
+	padding: 5px 10px;
+	background: #76c2d6;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 3px;
+	width: 80px;
+	transition-duration: 0.5s;
 }
-.kotak .form-group button:hover{
-    width: 120px;
-    box-shadow: 2px 3px #51FFD0FF;
-    font-size: 18px;
+
+.kotak .form-group button:hover {
+	width: 120px;
+	box-shadow: 2px 3px #51FFD0FF;
+	font-size: 18px;
 }
+
 /* Bagian Login */
 
 
@@ -167,97 +177,98 @@ body {
 
 /* BAgian Daftar */
 #heading {
-    text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
+	text-transform: uppercase;
+	color: #673AB7;
+	font-weight: normal
 }
 
 #msform {
-    text-align: center;
-    position: relative;
-    margin-top: 20px
+	text-align: center;
+	position: relative;
+	margin-top: 20px
 }
 
 #msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
-    position: relative
+	background: white;
+	border: 0 none;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding-bottom: 20px;
+	position: relative
 }
 
 .form-card {
-    text-align: left
+	text-align: left
 }
 
 #msform fieldset:not(:first-of-type) {
-    display: none
+	display: none
 }
 
 #msform input,
 #msform textarea {
-    padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    background-color: #ECEFF1;
-    font-size: 16px;
-    letter-spacing: 1px
+	padding: 8px 15px 8px 15px;
+	border: 1px solid #ccc;
+	border-radius: 0px;
+	margin-bottom: 25px;
+	margin-top: 2px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	background-color: #ECEFF1;
+	font-size: 16px;
+	letter-spacing: 1px
 }
 
 #msform input:focus,
 #msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #1eb2a6;;
-    outline-width: 0
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	border: 1px solid #1eb2a6;
+	;
+	outline-width: 0
 }
 
 #msform .action-button {
-    width: 100px;
-    background: #1eb2a6;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 0px 10px 5px;
-    float: right
+	width: 100px;
+	background: #1eb2a6;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 0px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 0px 10px 5px;
+	float: right
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    color: #1eb2a6;
-    background-color: #000000
+	color: #1eb2a6;
+	background-color: #000000
 }
 
 #msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
+	width: 100px;
+	background: #616161;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 0px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px 10px 0px;
+	float: right
 }
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-    color: #1eb2a6;
-    background-color: #000000
+	color: #1eb2a6;
+	background-color: #000000
 }
 
 
@@ -269,115 +280,124 @@ body {
 }*/
 
 .fs-title {
-    font-size: 25px;
-    color: #1eb2a6;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
+	font-size: 25px;
+	color: #1eb2a6;
+	margin-bottom: 15px;
+	font-weight: normal;
+	text-align: left
 }
 
 .steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right
+	font-size: 25px;
+	color: gray;
+	margin-bottom: 10px;
+	font-weight: normal;
+	text-align: right
 }
 
 .fieldlabels {
-    color: gray;
-    text-align: left
+	color: gray;
+	text-align: left
 }
 
 #progressbar {
-    margin-bottom: 30px;
-    overflow: hidden;
-    color: lightgrey
+	margin-bottom: 30px;
+	overflow: hidden;
+	color: lightgrey
 }
 
 #progressbar .active {
-    color: #1eb2a6
+	color: #1eb2a6
 }
 
 #progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
-    color : #d4f8e8;
+	list-style-type: none;
+	font-size: 15px;
+	width: 25%;
+	float: left;
+	position: relative;
+	font-weight: 400;
+	color: #d4f8e8;
 }
 
 #progressbar #datadiri:before {
-    font-family: FontAwesome;
-    content: "1"
+	font-family: FontAwesome;
+	content: "1"
 }
 
 #progressbar #jadwal:before {
-    font-family: FontAwesome;
-    content: "2"
+	font-family: FontAwesome;
+	content: "2"
 }
 
 #progressbar #pembayaran:before {
-    font-family: FontAwesome;
-    content: "3"
+	font-family: FontAwesome;
+	content: "3"
 }
 
 #progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "4"
+	font-family: FontAwesome;
+	content: "4"
 }
 
 #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
+	width: 50px;
+	height: 50px;
+	line-height: 45px;
+	display: block;
+	font-size: 20px;
+	color: #ffffff;
+	background: lightgray;
+	border-radius: 50%;
+	margin: 0 auto 10px auto;
+	padding: 2px
 }
 
 #progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: lightgray;
+	position: absolute;
+	left: 0;
+	top: 25px;
+	z-index: -1
 }
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #1eb2a6
+	background: #1eb2a6
 }
 
 .progress {
-    height: 20px
+	height: 20px
 }
 
 .progress-bar {
-    background-color: #d4f8e8
+	background-color: #d4f8e8
 }
 
 .fit-image {
-    width: 100%;
-    object-fit: cover
+	width: 100%;
+	object-fit: cover
 }
-#utama{
-    padding: 5px;
-    margin-left: 10%;
-    margin-top: 5%;
-    margin-right: 10%;
-}  
+
+#utama {
+	padding: 5px;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-right: 10%;
+}
 
 /* BAgian Daftar */
+
+/* Bagian Header */
+
+/* .user-name {
+	color: red;
+} */
+
+/* Bagian Header */
 
 
 

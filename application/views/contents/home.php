@@ -1,7 +1,11 @@
     <!-- ----------------------------------- Content ----------------------------------- -->
 
     <!-- Top Home Content -->
+
     <div class="container top-home-content">
+    	<div class="col-md-12 mb-0 mt-3">
+    		<?= $this->session->flashdata('pesan'); ?>
+    	</div>
     	<div class="row justify-content-center">
     		<!-- Content Home Top Left -->
     		<div class="col-md-5 pt-4 mt-5 content-home-left border-right">
