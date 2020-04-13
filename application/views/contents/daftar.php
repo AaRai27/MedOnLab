@@ -68,10 +68,10 @@
 						</div>
 						<select class="custom-select" id="cabang" name="cabang" value="<?= set_value('cabang') ?>">
 							<option selected>--Pilih Cabang--</option>
-							<option value="Cabang Bandung">Cabang Bandung</option>
-							<option value="Cabang Bekasi">Cabang Bekasi</option>
-							<option value="Cabang Bogor">Cabang Bogor</option>
-							<option value="Cabang Surakarta">Cabang Surakarta</option>
+							<option value="Bandung">Cabang Bandung</option>
+							<option value="Bekasi">Cabang Bekasi</option>
+							<option value="Bogor">Cabang Bogor</option>
+							<option value="Surakarta">Cabang Surakarta</option>
 						</select>
 					</div>
 

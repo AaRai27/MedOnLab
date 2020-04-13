@@ -26,7 +26,7 @@ class User extends CI_Controller
         $this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'required');
         $this->form_validation->set_rules('layanan', 'Layanan', 'required');
         $this->form_validation->set_rules('cabang', 'Cabang Lab', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required'); // Alamat Pasien
         $this->form_validation->set_rules('nomor_hp', 'Nomor HP', 'required|max_length[12]');
         $this->form_validation->set_rules('img_bukti', 'Bukti Transfer', 'required');
 

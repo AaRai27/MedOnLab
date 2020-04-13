@@ -2,6 +2,9 @@ body {
 	background-color: #fff;
 	height: 100%;
 }
+table{
+    width:100%;
+}
 
 .why-us h5 {
 	font-family: 'Letter Gothic Std', sans-serif;
