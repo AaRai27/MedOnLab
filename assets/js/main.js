@@ -1,3 +1,12 @@
+function showPasswordLama() {
+	var x = document.getElementById("password");
+	if (x.type === "password") {
+		x.type = "text";
+	} else {
+		x.type = "password";
+	}
+}
+
 function showPassword1() {
 	var x = document.getElementById("password1");
 	if (x.type === "password") {
@@ -17,7 +26,7 @@ function showPassword2() {
 }
 
 // Confirm sebelum hapus produk
-function del($url){
+function del($url) {
 	swal({
 		title: 'Are you sure?',
 		text: "You won't be able to revert this!",
@@ -27,8 +36,8 @@ function del($url){
 		cancelButtonColor: '#d33',
 		confirmButtonText: 'Yes, delete it!'
 	}).then((result) => {
-		if (result.value){
-			location.href = '/'+$url;
+		if (result.value) {
+			location.href = '/' + $url;
 		}
 	})
 }
@@ -117,19 +126,15 @@ $(document).ready(function () {
 	})
 
 	$('#tbMedcheck').DataTable({
-        columnDefs: [
-            {
-                targets: [ 0, 1, 2 ],
-                className: 'mdl-data-table__cell--non-numeric'
-            }
-        ]
-    });
+		columnDefs: [{
+			targets: [0, 1, 2],
+			className: 'mdl-data-table__cell--non-numeric'
+		}]
+	});
 	$('#tbAkun').DataTable({
-		columnDefs: [
-            {
-                targets: [ 0, 1, 2 ],
-                className: 'mdl-data-table__cell--non-numeric'
-            }
-        ]
-    });
+		columnDefs: [{
+			targets: [0, 1, 2],
+			className: 'mdl-data-table__cell--non-numeric'
+		}]
+	});
 });

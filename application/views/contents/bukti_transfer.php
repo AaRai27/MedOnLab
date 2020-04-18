@@ -1,4 +1,4 @@
-<div class="container" style="min-height: 35vw">
+<div class="container" style="height: 34rem">
     <div class="row mt-5 justify-content-center">
         <div class="card" style="width: 18rem;">
             <div class="info-rekening text-center mt-0 pt-3 border border-primary">
@@ -12,7 +12,7 @@
                 <h5 class="card-title mb-5">Bukti Pembayaran</h5>
                 <hr>
                 <?php echo $error; ?>
-                <?php echo form_open_multipart('upload/do_upload'); ?>
+                <?php echo form_open_multipart('upload/do_upload/' . $pasien['id']); ?>
                 <input type="file" name="img_bukti" class="mb-4" />
                 <br />
                 <div class="col-md-12">

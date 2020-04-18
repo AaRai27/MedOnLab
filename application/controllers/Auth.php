@@ -42,9 +42,9 @@ class Auth extends CI_Controller
                     ];
                     $this->session->set_userdata($data);
                     if ($user['role_id'] == 1) {
-                    redirect('Admin_home');
+                        redirect('admin');
                     } else {
-                    redirect('user');
+                        redirect('user');
                     }
                 } else {
                     $this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Wrong Password</div>');
@@ -96,8 +96,84 @@ class Auth extends CI_Controller
         redirect('auth');
     }
 
-    // public function blocked()
-    // {
-    //     $this->load->view('auth/blocked');
-    // }
+    public function ubahAkun()
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'Ubah Akun';
+        $this->form_validation->set_rules('fullname', 'Full Name', 'trim');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim');
+        $this->form_validation->set_rules('username', 'Username', 'trim');
+
+        if ($data['user']) {
+            if ($this->form_validation->run() == false) {
+                $this->load->view('templates/header', $data);
+                $this->load->view('auth/ubahAkun', $data);
+                $this->load->view('templates/footer', $data);
+                $this->session->set_flashdata('pesan', '<div class="alert alert-danger alert-dismissible fade show" role="alert">Akun Gagal Dirubah<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> </div>');
+            } else {
+
+                $cek = $this->ModelAuth->updateAkun($data['user']['id']);
+                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akun Berhasil Dirubah<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button> </div>');
+                redirect('user');
+            }
+        } else {
+            redirect('auth');
+        }
+    }
+
+
+    public function ubahPassword()
+    {
+        $this->load->helper(array('form', 'url'));
+
+        $this->load->library('form_validation');
+
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $this->form_validation->set_rules('password', 'Password Lama', 'callback_password_check');
+        $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[8]|matches[password2]', [
+            'matches' => 'Password not same',
+            'min_length' => 'Password is too short'
+        ]);
+        $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'required|trim|matches[password1]');
+
+        if ($data['user']) {
+            if ($this->form_validation->run() == false) {
+                $data['title'] = "Ubah Password";
+                $this->load->view('templates/header', $data);
+                $this->load->view('auth/ubahPassword', $data);
+                $this->load->view('templates/footer');
+            } else {
+                $this->ModelAuth->ubahPassword($data['user']['id']);
+                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Password Berhasil Dirubah <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button></div>');
+                redirect('user');
+            }
+        } else {
+            redirect('auth');
+        }
+    }
+
+    public function password_check($newPassword)
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $oldPassword = $data['user']['password'];
+
+
+        if (!password_verify($newPassword, $oldPassword)) {
+            $this->form_validation->set_message('password_check', "Password Lama Salah/Tidak Sama");
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    public function blocked()
+    {
+        $this->load->view('auth/blocked');
+    }
 }

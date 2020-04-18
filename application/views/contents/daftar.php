@@ -7,7 +7,13 @@
 	</nav>
 
 	<div id="utama" class="mt-1">
-		<?= validation_errors(); ?>
+		<?php if (validation_errors()) : ?>
+			<div class="col-md-5">
+				<div class="alert alert-danger" role="alert">
+					<b><?= validation_errors(); ?></b>
+				</div>
+			</div>
+		<?php endif; ?>
 		<h1>Pendaftaran Uji Laboratorium</h1>
 		<form id="msform" action="<?= base_url('user/daftar') ?>" method="post">
 			<!-- progressbar -->
@@ -31,7 +37,7 @@
 					<label class="fieldlabels">ID Pasien: *</label>
 					<input type="text" name="id_pasien" value="<?= $user['id_pasien'] ?>" readonly />
 					<label class="fieldlabels">Nama Pasien: *</label>
-					<input type="text" name="nama_pasien" value="<?= $user['fullname']; ?>" readonly />
+					<input type="text" class="text-capitalize" name="nama_pasien" value="<?= $user['fullname']; ?>" readonly />
 					<label class="fieldlabels">tanggal Lahir: *</label>
 					<input type="date" name="tgl_lahir" value="<?= set_value('tgl_lahir') ?>" />
 
@@ -68,10 +74,10 @@
 						</div>
 						<select class="custom-select" id="cabang" name="cabang" value="<?= set_value('cabang') ?>">
 							<option selected>--Pilih Cabang--</option>
-							<option value="Bandung">Cabang Bandung</option>
-							<option value="Bekasi">Cabang Bekasi</option>
-							<option value="Bogor">Cabang Bogor</option>
-							<option value="Surakarta">Cabang Surakarta</option>
+							<option value="Cabang Bandung">Cabang Bandung</option>
+							<option value="Cabang Bekasi">Cabang Bekasi</option>
+							<option value="Cabang Bogor">Cabang Bogor</option>
+							<option value="Cabang Surakarta">Cabang Surakarta</option>
 						</select>
 					</div>
 
@@ -82,7 +88,7 @@
 				<div class="form-card">
 					<div class="row">
 						<div class="col-md-7">
-							<h2 class="fs-title">Alamat dan Bukti Bayar</h2>
+							<h2 class="fs-title">Alamat dan Nomor HP</h2>
 						</div>
 						<div class="col-md-5">
 							<h2 class="steps">Step 3 - 4</h2>
@@ -93,7 +99,7 @@
 					<input type="text" name="alamat" id="alamat" value="<?= set_value('alamat') ?>" />
 					<label class="fieldlabels">Nomor Aktif Yang Dapat Dihubungi: *</label>
 					<input type="text" name="nomor_hp" id="nomor_hp" value="<?= set_value('nomor_hp') ?>" />
-					<input type="hidden" name="img_bukti" id="img_bukti" value="<?= str_replace(' ', '', $user['fullname']) . '_' . str_replace(' ', '', $user['id_pasien']) . '.jpg' ?>" />
+
 
 				</div>
 				<input type="button" name="next" class="next action-button" value="Apply" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
@@ -111,7 +117,6 @@
 					<div class="alert alert-warning mt-3 text-center" role="alert">
 						<p>Segera lakukan pembayaran ke Rekening Mandiri 115896327536 a/n. MedOnLab</p>
 						<p>Format Penamaan File : <b>"<?= str_replace(' ', '', $user['fullname']) . '_' . str_replace(' ', '', $user['id_pasien']) . '.jpg' ?>"</b> (Tanpa Spasi) </p>
-						<a href="<?= base_url('upload/do_upload') ?>">Page Bukti Transfer</a>
 					</div>
 				</div>
 			</fieldset>

@@ -41,7 +41,7 @@
     			<!-- Carousel -->
     			<!-- button daftar -->
     			<div class="button-daftar-med-cek">
-    				<a href="daftar.html" type="button" class="btn btn-primary btn-lg d-flex justify-content-center mt-3">Daftar
+    				<a href="<?= base_url('user/daftar') ?>" type="button" class="btn btn-primary btn-lg d-flex justify-content-center mt-3">Daftar
     					Medical
     					Check Up</a>
     			</div>
@@ -78,7 +78,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#registrasi">
     								<img src="<?= base_url('assets/img/registration.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Registrasi</h4>
     								<h3 class="float-right text-primary border-primary border-left">&nbsp 1</h3>
@@ -89,7 +89,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#login">
     								<img src="<?= base_url('assets/img/login.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Login</h4>
     								<h3 class="float-right text-primary border-primary border-left">&nbsp 2</h3>
@@ -100,7 +100,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#daftar">
     								<img src="<?= base_url('assets/img/daftar.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Daftar</h4>
     								<h3 class="float-right text-success border-success border-left">&nbsp 3</h3>
@@ -111,7 +111,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#puasa">
     								<img src="<?= base_url('assets/img/puasa.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Puasa</h4>
     								<h3 class="float-right text-success border-success border-left">&nbsp 4</h3>
@@ -122,7 +122,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#datang">
     								<img src="<?= base_url('assets/img/datang.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Datang</h4>
     								<h3 class="float-right text-warning border-warning border-left">&nbsp 5</h3>
@@ -133,7 +133,7 @@
     				<div class="col-md-6 mt-3">
     					<div class="card content-how border border-primary">
     						<div class="card-body mx-1">
-    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#exampleModal">
+    							<a style="cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#hasil">
     								<img src="<?= base_url('assets/img/result.png') ?>" width="50px" class="float-left">
     								<h4 class="text-how float-left text-center mt-1">Hasil</h4>
     								<h3 class="float-right text-warning border-warning border-left">&nbsp 6</h3>
@@ -248,17 +248,96 @@
 
 
     <!-- Modal  -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="registrasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     	<div class="modal-dialog" role="document">
     		<div class="modal-content">
-    			<div class="modal-header">
-    				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+    			<div class="modal-header bg-info text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Registrasi</h5>
     				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
     					<span aria-hidden="true">&times;</span>
     				</button>
     			</div>
     			<div class="modal-body">
-    				Isi Penjelasan Dari Alur
+    				<p>Jika Anda Belum Mendaftar menjadi member Kami,</p>
+    				<p> klik tombol <b>Registrasi</b> pada navbar bagian kanan atas</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header bg-info text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Login</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<p>Jika anda sudah Memiliki Akun atau Sudah Registrasi</p>
+    				Silahkan <b>Login</b> dengan klik tombol login pada navbar bagian kanan
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header bg-success text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Daftar</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				Anda Bisa Mendaftar Medical Check Up Dengan klik Tombol pendaftaran
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal fade" id="puasa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header bg-success text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Puasa</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<p>Sebelum Datang Ke Dokter Untuk Medical Check Up Anda Diharapkan <b>berpuasa</b> terlebih dahulu <b>1 hari</b> sebelum tanggal periksa</p>
+    				<p>Cek Jadwal Periksa Anda Pada Menu <b>Cek Status</b> </p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal fade" id="datang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header bg-warning text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Datang</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<p>Setelah Mendaftar Dan Berpuasa 1 Hari, silahkan Datang ke Dokter untuk Melakukan Medical Check Up</p>
+    				<p>Silahkan Datang Pada <b>Tanggal Yang Sudah Ditentukan</b> Di Menu <b>Cek Status</b></p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="modal fade" id="hasil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header bg-warning text-white">
+    				<h5 class="modal-title" id="exampleModalLabel">Hasil Medical Check Up</h5>
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    					<span aria-hidden="true">&times;</span>
+    				</button>
+    			</div>
+    			<div class="modal-body">
+    				<p>Hasil Medical Check Up Akan Keluar 2-3 Hari setelah pemeriksaan</p>
     			</div>
     		</div>
     	</div>

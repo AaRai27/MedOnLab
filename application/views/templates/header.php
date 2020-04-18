@@ -53,9 +53,24 @@
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#">
+                            <a class="dropdown-item" href="<?= base_url('user/lihat_profile') ?>">
                                 <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Profile
+                                My Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="<?= base_url('user/history_cek') ?>">
+                                <i class="fas fa-briefcase-medical fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Cek Status
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="<?= base_url('auth/ubahAkun/' . $user['id']) ?>">
+                                <i class="fas fa-user-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Edit Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="<?= base_url('auth/ubahPassword') ?>">
+                                <i class="fas fa-user-edit fa-sm fa-fw mr-2 text-gray-400"></i>
+                                Ubah Password
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="<?= base_url('auth/logout') ?>">

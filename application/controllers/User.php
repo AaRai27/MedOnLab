@@ -20,15 +20,14 @@ class User extends CI_Controller
     public function daftar()
     {
         $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
-        // $data['id_pasien'] = $this->ModelUser->getUserById($data['user']['id_pasien']);
         $data['title'] = "Pendaftaran MedCek";
 
         $this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'required');
         $this->form_validation->set_rules('layanan', 'Layanan', 'required');
         $this->form_validation->set_rules('cabang', 'Cabang Lab', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required'); // Alamat Pasien
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
         $this->form_validation->set_rules('nomor_hp', 'Nomor HP', 'required|max_length[12]');
-        $this->form_validation->set_rules('img_bukti', 'Bukti Transfer', 'required');
+        // $this->form_validation->set_rules('img_bukti', 'Bukti Transfer', 'required');
 
         if ($data['user']) {
             if ($this->form_validation->run() == FALSE) {
@@ -39,16 +38,14 @@ class User extends CI_Controller
                 $this->ModelUser->daftarMedCek();
                 $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Pendaftaran Anda Sudah Diterima, Harap Cek Informasi Pada Menu Cek Status <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-              </button> </div>');
-                redirect('upload/do_upload');
+                </button> </div>');
+                redirect('user');
             }
         } else {
             $this->session->set_flashdata('pesan', '<div class="alert alert-primary" role="alert">Harap Login Sebelum Mendaftar Medical Check Up</div>');
             redirect('auth');
         }
     }
-
-
 
     public function infosehat()
     {
@@ -59,23 +56,68 @@ class User extends CI_Controller
         $this->load->view('templates/footer');
     }
 
-
-    public function upload_bukti()
+    public function cek_status($id)
     {
-        $config['upload_path']          =  './upload/'; //isi dengan nama folder temoat menyimpan gambar
-        $config['allowed_types']        =  'jpg|png'; //isi dengan format/tipe gambar yang diterima
-        $config['max_size']             = '100';  //isi dengan ukuran maksimum yang bisa di upload
-        $config['max_width']            =  '1024'; //isi dengan lebar maksimum gambar yang bisa di upload
-        $config['max_height']           = '780'; //isi dengan panjang maksimum gambar yang bisa di upload
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $data['pasien'] = $this->db->get_where('medcek', ['id' => $id])->row_array();
+        $data['title'] = "Cek Status Medical Check Up";
+        $this->load->view('templates/header', $data);
+        $this->load->view('contents/view_hasil', $data);
+        $this->load->view('templates/footer');
+    }
 
-        $this->load->library('upload', $config);
+    public function edit_medcheck($id)
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $data['pasien'] = $this->db->get_where('medcek', ['id' => $id])->row_array();
+        $data['title'] = "Cek Status Medical Check Up";
+        $this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'required');
+        $this->form_validation->set_rules('layanan', 'Layanan', 'required');
+        $this->form_validation->set_rules('cabang', 'Cabang Lab', 'required');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
+        $this->form_validation->set_rules('nomor_hp', 'Nomor HP', 'required|max_length[12]');
 
-        //lengkapi kondisi berikut
-        if (!$this->upload->do_upload('img_bukti')) {
-            $error = array('error' => $this->upload->display_errors());
-            $this->load->view('user/daftar', $error);
+        if ($data['user']) {
+            if ($this->form_validation->run() == false) {
+                $this->load->view('templates/header', $data);
+                $this->load->view('contents/editMedcheck', $data);
+                $this->load->view('templates/footer');
+            } else {
+                $this->ModelUser->editMedcek($id);
+                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Pendaftaran Anda Sudah Diterima, Harap Cek Informasi Pada Menu Cek Status <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button> </div>');
+                redirect('user');
+            }
         } else {
-            $data = array('upload_data' => $this->upload->data());
+            redirect('auth');
         }
+    }
+
+
+
+    public function history_cek()
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $id_pasien = $data['user']['id_pasien'];
+        $data['medcek'] = $this->ModelUser->getPasienByIdPasien($id_pasien);
+        $data['title'] = "History Medical Check Up";
+        if ($data['user']) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('contents/history_cek', $data);
+            $this->load->view('templates/footer');
+        } else {
+            redirect('auth');
+        }
+    }
+
+    public function lihat_profile()
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+        $data['title'] = 'My Profile';
+
+        $this->load->view('templates/header', $data);
+        $this->load->view('contents/lihatProfile', $data);
+        $this->load->view('templates/footer');
     }
 }

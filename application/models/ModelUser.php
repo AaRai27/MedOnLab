@@ -21,7 +21,17 @@ class ModelUser extends CI_Model
 
     public function getUserById($id)
     {
-        $this->db->get_where('akun', ['id' => $id])->row_array();
+        return $this->db->get_where('akun', ['id' => $id])->row_array();
+    }
+
+    public function getPasienByIdPasien($id_pasien)
+    {
+        return $this->db->get_where('medcek', ['id_pasien' => $id_pasien])->result_array();
+    }
+
+    public function getPasienById($id)
+    {
+        return $this->db->get_where('medcek', ['id' => $id])->row_array();
     }
 
     public function daftarMedCek()
@@ -36,10 +46,24 @@ class ModelUser extends CI_Model
             'cabang' => htmlspecialchars($this->input->post('cabang', true)),
             'alamat' => htmlspecialchars($this->input->post('alamat', true)),
             'nomor_hp' => htmlspecialchars($this->input->post('nomor_hp', true)),
-            'img_bukti' => htmlspecialchars($this->input->post('img_bukti', true)),
+            'img_bukti' => NULL,
             'tgl_periksa' => $tgl_periksa,
-            'tgl_ambil' => $tgl_ambil
+            'tgl_ambil' => $tgl_ambil,
+            'status' => 0 //(0 = belum bayar, 1 = sedang di proses, 2 = selesai )
         ];
         $this->db->insert('medcek', $data);
+    }
+
+    public function editMedcek($id)
+    {
+        $data = [
+            'tgl_lahir' => htmlspecialchars($this->input->post('tgl_lahir', true)),
+            'layanan' => htmlspecialchars($this->input->post('layanan', true)),
+            'cabang' => htmlspecialchars($this->input->post('cabang', true)),
+            'alamat' => htmlspecialchars($this->input->post('alamat', true)),
+            'nomor_hp' => htmlspecialchars($this->input->post('nomor_hp', true))
+        ];
+        $this->db->where('id', $id);
+        $this->db->update('medcek', $data);
     }
 }

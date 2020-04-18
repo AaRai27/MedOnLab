@@ -23,10 +23,29 @@ class ModelAuth extends CI_Model
             'email' => htmlspecialchars($this->input->post('email', true)),
             'image' => 'default.jpg',
             'password' => password_hash($this->input->post('password1'), PASSWORD_DEFAULT),
-            'role_id' => 2,
+            'role_id' => 2, //(1 = admin, 2 = member)
             'is_active' => 1,
             'date_created' => time()
         ];
         $this->db->insert('akun', $data);
+    }
+
+    public function updateAkun($id)
+    {
+        $data = array(
+            'fullname' =>  htmlspecialchars($this->input->post('fullname', true)),
+            'username' =>  htmlspecialchars($this->input->post('username', true)),
+            'email' => htmlspecialchars($this->input->post('email', true))
+        );
+        $this->db->where('id', $id);
+        $this->db->update('akun', $data);
+    }
+
+    public function ubahPassword($id)
+    {
+        $new_password =  password_hash($this->input->post('password1'), PASSWORD_DEFAULT);
+        $this->db->set('password', $new_password);
+        $this->db->where('id', $id);
+        $this->db->update('akun');
     }
 }

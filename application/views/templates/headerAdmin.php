@@ -36,9 +36,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link text-white active" href="<?= base_url('Admin_home') ?>">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item text-white nav-link" href="<?= base_url('Admin_akun') ?>">Data Akun</a>
-                <a class="nav-item text-white nav-link" href="<?= base_url('Admin_medcheck') ?>">Data Medical</a>
+                <a class="nav-item nav-link text-white active" href="<?= base_url('admin') ?>">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item text-white nav-link" href="<?= base_url('admin/view_all_akun') ?>">Data Akun</a>
+                <a class="nav-item text-white nav-link" href="<?= base_url('admin/view_all_medcheck') ?>">Data Medical</a>
             </div>
         </div>
         <form class="form-inline">
@@ -50,7 +50,7 @@
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="user-name mr-2 d-none d-lg-inline text-white small" style="text-transform: uppercase;font-weight: 500"><?php echo 'Admin '?><?= $user['username'] ?></span>
+                            <span class="user-name mr-2 d-none d-lg-inline text-white small" style="text-transform: uppercase;font-weight: 500"><?php echo 'Admin ' ?><?= $user['username'] ?></span>
                             <img class="img-profile rounded-circle" src="<?= base_url('assets/img/profile/') . $user['image']; ?>" width="35">
                         </a>
                         <!-- Dropdown - User Information -->
