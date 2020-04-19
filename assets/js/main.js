@@ -25,7 +25,7 @@ function showPassword2() {
 	}
 }
 
-// Confirm sebelum hapus produk
+// SWEETALERT CONFIRM DELETE
 function del($url) {
 	swal({
 		title: 'Are you sure?',
@@ -38,8 +38,17 @@ function del($url) {
 	}).then((result) => {
 		if (result.value) {
 			location.href = '/' + $url;
+			swal("Deleted!", "Your Data has been deleted.", "success");
 		}
 	})
+}
+// SWEETALERT CONFIRM EDIT
+function edit() {
+	swal("Edited!", "Your Data has been edited.", "success");
+}
+// SWEETALERT CONFIRM ADD
+function add() {
+	swal("Added!", "Your Data has been added.", "success");
 }
 
 $(document).ready(function () {

@@ -26,7 +26,7 @@ class Admin extends CI_Controller
         }
     }
 
-    // Bagian AKun
+    // BAGIAN AKUN
     public function view_all_akun()
     {
         $content['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
@@ -72,7 +72,7 @@ class Admin extends CI_Controller
                 $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akun Berhasil Didaftarkan <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button></div>');
-                redirect('admin');
+                redirect('admin/view_all_akun');
             }
         } else {
             redirect('auth/blocked');
@@ -119,7 +119,7 @@ class Admin extends CI_Controller
                     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akun Berhasil Dirubah <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button></div>');
-                    redirect('admin');
+                    redirect('admin/view_all_akun');
                 }
             } else {
                 redirect('auth/blocked');
@@ -153,7 +153,7 @@ class Admin extends CI_Controller
                     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Password Berhasil Dirubah <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button></div>');
-                    redirect('admin');
+                    redirect('admin/view_all_akun');
                 }
             } else {
                 redirect('auth/blocked');
@@ -171,10 +171,7 @@ class Admin extends CI_Controller
         if ($content['user']) {
             if ($role_id == 1) {
                 $cek = $this->ModelAccount->delete_akun($id);
-                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Akun Berhasil Dihapus <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button></div>');
-                redirect('admin');
+                redirect('admin/view_all_akun');
             } else {
                 redirect('auth/blocked');
             }
@@ -186,7 +183,7 @@ class Admin extends CI_Controller
 
 
 
-    // Bagian Medcheck
+    // BAGIAN MEDCHECK
 
     public function view_all_medcheck()
     {
@@ -243,7 +240,7 @@ class Admin extends CI_Controller
                     $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Pendaftaran Berhasil Dimasukkan <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                     </button> </div>');
-                    redirect('admin');
+                    redirect('admin/view_all_medcheck');
                 }
             } else {
                 $this->session->set_flashdata('pesan', '<div class="alert alert-primary" role="alert">Harap Login Sebelum Mendaftar Medical Check Up</div>');
@@ -295,7 +292,7 @@ class Admin extends CI_Controller
                 $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Data Berhasil Dirubah<button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button> </div>');
-                redirect('admin');
+                redirect('admin/view_all_medcheck');
             }
         } else {
             redirect('auth/blocked');
@@ -309,9 +306,7 @@ class Admin extends CI_Controller
             $this->load->view('templates/headerAdmin');
             $this->load->view('templates/footer');
             $cek = $this->ModelMedcheck->delete_medcheck($id);
-            if ($cek) $this->session->set_flashdata('pesan', 'Medical Berhasil dihapus');
-            else $this->session->set_flashdata('pesan', 'Medical Gagal dihapus');
-            redirect('admin');
+            redirect('admin/view_all_medcheck');
         } else {
             redirect('auth/blocked');
         }

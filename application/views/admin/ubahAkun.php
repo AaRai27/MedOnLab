@@ -21,8 +21,8 @@
 	</div>
 	<!--  -->
 	<div class="form-group">
-		<a href="<?= base_url('admin') ?>" class="btn btn-success">Back</a>
-		<?= form_submit('submit', 'Update', ['class' => 'btn btn-warning']) ?>
+		<a href="<?= base_url('admin/view_all_akun') ?>" class="btn btn-success">Back</a>
+		<?= form_submit('submit', 'Update', ['class' => 'btn btn-warning', "onclick" =>'edit()']) ?>
 	</div>
 	<?= form_close() ?>
 </div>

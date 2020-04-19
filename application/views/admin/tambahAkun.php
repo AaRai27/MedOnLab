@@ -76,7 +76,7 @@
 								<small class="text-danger"><?= form_error('password2') ?></small>
 							</div>
 							<div class="d-flex justify-content-around mt-0">
-								<button type="submit" class="btn btn-success">SUBMIT</button>
+								<button type="submit" class="btn btn-success" onclick="add()">SUBMIT</button>
 							</div>
 						</div>
 					</div>
