@@ -8,7 +8,7 @@
             </div>
         </div>
     </div>
-    <?= form_open('User/lihat_profile') ?>
+    <?= form_open('User/lihat_profile_admin') ?>
     <div class="form-group">
         <?= form_label('Full Name') ?>
         <?= form_input(['name' => 'fullname', 'class' => 'form-control', 'required' => 'required', 'value' => $user['fullname'], 'readonly' => 'true']) ?>
@@ -23,7 +23,6 @@
     </div>
     <div class="form-group">
         <a href="<?= base_url('user') ?>" class="btn btn-success">Back</a>
-        <a href="<?= base_url('user/history_cek') ?>" class="btn btn-primary">Lihat Riwayat Pemeriksaan</a>
     </div>
     <?= form_close() ?>
 </div>

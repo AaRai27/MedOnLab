@@ -4,19 +4,32 @@
 	<?= form_open('admin/ubah_medcheck/' . $medcheck['id']) ?>
 	<div class=" form-group">
 		<?= form_label('Nama') ?>
-		<?= form_input(['name' => 'nama_pasien', 'class' => 'form-control', 'value' => $medcheck['nama_pasien']]) ?>
+		<?= form_input(['name' => 'nama_pasien', 'class' => 'form-control', 'value' => $medcheck['nama_pasien'], 'readonly' => 'true']) ?>
 	</div>
 	<div class="form-group">
 		<?= form_label('Tanggal Lahir') ?>
-		<?= form_input(['name' => 'tgl_lahir', 'class' => 'form-control', 'value' => $medcheck['tgl_lahir']]) ?>
+		<?= form_input(['name' => 'tgl_lahir', 'class' => 'form-control', 'value' => $medcheck['tgl_lahir'], 'type' => 'date']) ?>
 	</div>
 	<div class="form-group">
 		<?= form_label('Layanan') ?>
-		<?= form_input(['name' => 'layanan', 'class' => 'form-control', 'value' => $medcheck['layanan']]) ?>
+		<select class="custom-select" id="layanan" name="layanan">
+			<option value="<?= $medcheck['layanan'] ?>" selected><?= $medcheck['layanan'] ?></option>
+			<option>------</option>
+			<option value="Cek Darah">Cek Darah</option>
+			<option value="cek Urin">cek Urin</option>
+			<option value="Cek Darah dan Urin">Cek Darah dan Urin</option>
+		</select>
 	</div>
 	<div class="form-group">
 		<?= form_label('Cabang Lab') ?>
-		<?= form_input(['name' => 'cabang', 'class' => 'form-control', 'value' => $medcheck['cabang']]) ?>
+		<select class="custom-select" id="cabang" name="cabang">
+			<option value="<?= $medcheck['cabang'] ?>" selected><?= $medcheck['cabang'] ?></option>
+			<option>------</option>
+			<option value="Cabang Bandung">Cabang Bandung</option>
+			<option value="Cabang Bekasi">Cabang Bekasi</option>
+			<option value="Cabang Bogor">Cabang Bogor</option>
+			<option value="Cabang Surakarta">Cabang Surakarta</option>
+		</select>
 	</div>
 	<div class="form-group">
 		<?= form_label('Alamat') ?>
@@ -29,7 +42,14 @@
 	<div class="form-group">
 		<?= form_label('Bukti Pembayaran') ?>
 		<?= form_input(['name' => 'img_bukti', 'class' => 'form-control', 'value' => $medcheck['img_bukti']]) ?>
-		<a target="_blank" href="<?= base_url('assets/img/buktiBayar/') . $medcheck['img_bukti'] ?>" class="btn btn-primary">Lihat Bukti Pembayaran</a>
+		<a target="_blank" href="<?= base_url('assets/img/buktiBayar/') . $medcheck['img_bukti'] ?>" class="btn btn-primary mt-2">Lihat Bukti Pembayaran</a>
+	</div>
+
+	<div class="form-group">
+		<?= form_label('Hasil Lab Medical Check Up') ?>
+		<?= form_input(['name' => 'hasil_lab', 'class' => 'form-control', 'value' => $medcheck['hasil_lab']]) ?>
+		<a target="_blank" href="<?= base_url('assets/img/hasilLab/') . $medcheck['hasil_lab'] ?>" class="btn btn-primary mt-2">Lihat Hasil Lab</a>
+		<a href="<?= base_url('upload/upload_hasil_lab/') . $medcheck['id'] ?>" class="btn btn-success mt-2">Upload Hasil Lab</a>
 	</div>
 
 	<div class=" form-group">

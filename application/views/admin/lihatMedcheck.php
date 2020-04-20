@@ -5,8 +5,13 @@
 					<div class="container text-center">
 						<h3>Daftar Medical Check</h3>
 					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<?= $this->session->flashdata('pesan'); ?>
+						</div>
+					</div>
 					<div class="container text-right">
-						<a href="<?= base_url('admin/form_tambah_medcheck') ?>" class="btn btn-primary">Add Data</a>
+						<a href="<?= base_url('admin/tambah_medcheck') ?>" class="btn btn-primary">Add Data</a>
 					</div>
 					<br>
 					<?php

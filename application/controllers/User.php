@@ -61,16 +61,20 @@ class User extends CI_Controller
         $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
         $data['pasien'] = $this->db->get_where('medcek', ['id' => $id])->row_array();
         $data['title'] = "Cek Status Medical Check Up";
-        $this->load->view('templates/header', $data);
-        $this->load->view('contents/view_hasil', $data);
-        $this->load->view('templates/footer');
+        if ($data['user']) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('contents/view_hasil', $data);
+            $this->load->view('templates/footer');
+        } else {
+            redirect('auth');
+        }
     }
 
     public function edit_medcheck($id)
     {
         $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
         $data['pasien'] = $this->db->get_where('medcek', ['id' => $id])->row_array();
-        $data['title'] = "Cek Status Medical Check Up";
+        $data['title'] = "Edit Medical Check Up";
         $this->form_validation->set_rules('tgl_lahir', 'Tanggal Lahir', 'required');
         $this->form_validation->set_rules('layanan', 'Layanan', 'required');
         $this->form_validation->set_rules('cabang', 'Cabang Lab', 'required');
@@ -84,7 +88,7 @@ class User extends CI_Controller
                 $this->load->view('templates/footer');
             } else {
                 $this->ModelUser->editMedcek($id);
-                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Pendaftaran Anda Sudah Diterima, Harap Cek Informasi Pada Menu Cek Status <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Data Berhasil Dirubah <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button> </div>');
                 redirect('user');
@@ -115,9 +119,12 @@ class User extends CI_Controller
     {
         $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = 'My Profile';
-
-        $this->load->view('templates/header', $data);
-        $this->load->view('contents/lihatProfile', $data);
-        $this->load->view('templates/footer');
+        if ($data['user']) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('contents/lihatProfile', $data);
+            $this->load->view('templates/footer');
+        } else {
+            redirect('auth');
+        }
     }
 }

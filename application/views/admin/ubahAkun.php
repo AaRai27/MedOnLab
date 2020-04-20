@@ -13,7 +13,7 @@
 	</div>
 	<div class="form-group">
 		<?= form_label('Username') ?>
-		<?= form_input(['name' => 'username', 'class' => 'form-control', 'required' => 'required', 'value' => $akun['username']]) ?>
+		<?= form_input(['name' => 'username', 'class' => 'form-control', 'required' => 'required', 'value' => $akun['username'], 'readonly' => 'true']) ?>
 	</div>
 	<div class="form-group">
 		<?= form_label('Ganti Password') ?>
@@ -22,7 +22,7 @@
 	<!--  -->
 	<div class="form-group">
 		<a href="<?= base_url('admin/view_all_akun') ?>" class="btn btn-success">Back</a>
-		<?= form_submit('submit', 'Update', ['class' => 'btn btn-warning', "onclick" =>'edit()']) ?>
+		<?= form_submit('submit', 'Update', ['class' => 'btn btn-warning', "onclick" => 'edit()']) ?>
 	</div>
 	<?= form_close() ?>
 </div>

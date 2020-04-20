@@ -93,19 +93,19 @@
   							</div>
   						</div>
   					</div>
-  					<a href="#" class="btn btn-primary" style="margin-top: 20px;">Lihat Hasil Tes Laboratorium</a>
+  					<a target="__blank" href="<?= base_url('assets/img/hasilLab/') . $pasien['hasil_lab'] ?>" class="btn btn-primary" style="margin-top: 20px;">Lihat Hasil Tes Laboratorium</a>
   				</div>
   				<?php if ($pasien['status'] == 0) : ?>
   					<div class="card-footer text-dark" style=" background-color: #D8D8D8FF;">
   						<td class="text-center">MENUNGGU PEMBAYARAN, <a href="<?= base_url('upload/do_upload/') . $pasien['id'] ?>">Page Pembayaran</a></td>
   					</div>
   				<?php elseif ($pasien['status'] == 1) : ?>
-  					<div class="card-footer text-white" style=" background-color: #18b0b0;">
-  						<td class="text-center">PEMERIKSAAN SELESAI</td>
-  					</div>
-  				<?php else : ?>
   					<div class="card-footer text-white" style=" background-color: #de7119;">
   						<td class="text-center">SEDANG DIPROSES</td>
+  					</div>
+  				<?php else : ?>
+  					<div class="card-footer text-white" style=" background-color: #18b0b0;">
+  						<td class="text-center">PEMERIKSAAN SELESAI</td>
   					</div>
   				<?php endif; ?>
   			</div>

@@ -62,9 +62,9 @@
 						</div>
 						<select class="custom-select" id="layanan" name="layanan" value="<?= set_value('layanan') ?>">
 							<option selected>--Pilih Layanan--</option>
-							<option>Cek Darah</option>
-							<option>cek Urin</option>
-							<option>Cek Darah dan Urin</option>
+							<option value="Cek Darah">Cek Darah</option>
+							<option value="cek Urin">cek Urin</option>
+							<option value="Cek Darah dan Urin">Cek Darah dan Urin</option>
 						</select>
 					</div>
 					<label class="fieldlabels">Lokasi Laboratorium: *</label>

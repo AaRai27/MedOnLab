@@ -8,10 +8,10 @@ class ModelMedcheck extends CI_Model
 		parent::__construct();
 	}
 
-	// public function get_all_akun()
-	// {
-	// 	return $this->db->get('akun')->result_array();
-	// }
+	public function get_all_akun()
+	{
+		return $this->db->get('akun')->result_array();
+	}
 
 	// Get semua data dari tabel MedCheck
 	public function get_all()
@@ -48,7 +48,8 @@ class ModelMedcheck extends CI_Model
 			'img_bukti' => NULL,
 			'tgl_periksa' => $tgl_periksa,
 			'tgl_ambil' => $tgl_ambil,
-			'status' => 0 //(0 = belum bayar, 1 = sedang di proses, 2 = selesai )
+			'status' => 0,
+			'hasil_lab' => NULL //(0 = belum bayar, 1 = sedang di proses, 2 = selesai )
 		];
 		$this->db->insert('medcek', $data);
 	}
@@ -70,7 +71,8 @@ class ModelMedcheck extends CI_Model
 			'alamat' => $this->input->post('alamat'),
 			'nomor_hp' => $this->input->post('nomor_hp'),
 			'img_bukti' => $this->input->post('img_bukti'),
-			'status' => $this->input->post('status')
+			'status' => $this->input->post('status'),
+			'hasil_lab' => $this->input->post('hasil_lab')
 		);
 		$this->db->where('id', $id);
 		return $this->db->update('medcek', $data);

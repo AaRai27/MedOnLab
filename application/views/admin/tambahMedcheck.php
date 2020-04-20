@@ -10,7 +10,7 @@
 					<div class="col-sm-10">
 						<select class="form-control form-control-md" id="id_pasien" name="id_pasien">
 							<?php foreach ($pasien as $p) : ?>
-								<option value="<?= $p['id_pasien'] ?>"><?= $p['id_pasien'] . ' (' . $p['nama_pasien'] . ')' ?></option>
+								<option value="<?= $p['id_pasien'] ?>"><?= $p['id_pasien'] . ' (' . $p['fullname'] . ')' ?></option>
 							<?php endforeach; ?>
 						</select>
 					</div>

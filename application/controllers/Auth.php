@@ -66,7 +66,9 @@ class Auth extends CI_Controller
         $this->form_validation->set_rules('username', 'Nama', 'required|trim|is_unique[akun.username]', [
             'is_unique' => 'Username Sudah Terpakai'
         ]);
-        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[akun.email]');
+        $this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[akun.email]', [
+            'is_unique' => 'Email Sudah Pernah Didaftarkan'
+        ]);
         $this->form_validation->set_rules('password1', 'Password', 'required|trim|min_length[8]|matches[password2]', [
             'matches' => 'Password not same',
             'min_length' => 'Password is too short'

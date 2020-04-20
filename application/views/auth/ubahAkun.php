@@ -29,7 +29,7 @@
 	</div>
 	<div class="form-group">
 		<?= form_label('Username') ?>
-		<?= form_input(['name' => 'username', 'class' => 'form-control', 'value' => $user['username']]) ?>
+		<?= form_input(['name' => 'username', 'class' => 'form-control', 'value' => $user['username'], 'readonly' => 'true']) ?>
 	</div>
 	<div class="form-group">
 		<a href="<?= site_url('User') ?>" class="btn btn-success">Back</a>

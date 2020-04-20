@@ -51,19 +51,19 @@ class ModelUser extends CI_Model
             'tgl_ambil' => $tgl_ambil,
             'status' => 0 //(0 = belum bayar, 1 = sedang di proses, 2 = selesai )
         ];
-        $this->db->insert('medcek', $data);
+        return $this->db->insert('medcek', $data);
     }
 
     public function editMedcek($id)
     {
-        $data = [
+        $data = array(
             'tgl_lahir' => htmlspecialchars($this->input->post('tgl_lahir', true)),
             'layanan' => htmlspecialchars($this->input->post('layanan', true)),
             'cabang' => htmlspecialchars($this->input->post('cabang', true)),
             'alamat' => htmlspecialchars($this->input->post('alamat', true)),
             'nomor_hp' => htmlspecialchars($this->input->post('nomor_hp', true))
-        ];
+        );
         $this->db->where('id', $id);
-        $this->db->update('medcek', $data);
+        return $this->db->update('medcek', $data);
     }
 }
