@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 18, 2020 at 05:14 PM
+-- Generation Time: Apr 20, 2020 at 01:45 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -47,12 +47,8 @@ CREATE TABLE `akun` (
 
 INSERT INTO `akun` (`id`, `id_pasien`, `fullname`, `username`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
 (1, 'MC-1', 'Muhammad Afif Raihan', 'Mafifraihan', 'raihangeorgia@gmail.com', 'default.jpg', '$2y$10$FNlbXGlsFaFv4uF5IRYum.bKQirbRRrKzEzJ0mfneScGaE87NWKOu', 1, 1, 1587013176),
-(2, 'MC-2', 'Rayhan Rahmanda', 'Ray', 'rayrahmanda@gmail.com', 'default.jpg', '$2y$10$ntpq3gnJmiURF57.NkWxIOBGJ.AmlX1WVmAH07EFtIb3LmdvVwlLa', 2, 1, 1587013215),
-(3, 'MC-3', 'Muhammad Farell Ambiar', 'Alle', 'farell@gmail.com', 'default.jpg', '$2y$10$qJ5QgUj4P6uu.u/PcRhJe./StM3MxnYVXFC6o4o/zBgHL8jTJui3K', 2, 1, 1587013237),
-(4, 'MC-4', 'Mochammad Daffa Haris', 'Daffa Haris', 'daffaharis@gmail.com', 'default.jpg', '$2y$10$gLRcpKESIeBff/j0rBwSBudni10UHZZFizPplVjyLkH9CDmur7Tfy', 2, 1, 1587013287),
-(9, 'MC-9', 'member baru', 'member baru', 'memberr@gmail.com', 'BELL.jpg', '$2y$10$HltPqxzO9Ie7eBBjuL11Z.2v7OSyVWVC7o7GegiWLZyq.P185tX.u', 2, 1, 1587182816),
-(12, 'MC-10', 'Member Buat Dihapus', 'member hapus', 'memberhapus@gmail.com', 'default.jpg', '$2y$10$czw1roMU2SDh33yBpRwI7OWjOSorggAFwniJVFwIXKKaz9QOKAopS', 2, 1, 1587217986),
-(13, 'MC-13', 'finishing', 'finishing', 'finishing@gmail.com', 'default.jpg', '$2y$10$YimB59gPs9PHhekRM4bLY.oILodYN.aBE8tFrIkM.4NP4E/.2m4q2', 2, 1, 1587219812);
+(2, 'MC-2', 'Rayhan Aja', 'Ray', 'rayrahmanda@gmail.com', 'default1.jpg', '$2y$10$I3im0rRASsluDAFsjkkxqeT67meplbBp3wC1wZpV13jaJ5yO1ZaJ6', 2, 1, 1587013215),
+(14, 'MC-3', 'Afif Raihan', 'afifraihan', 'afifraihan@gmail.com', 'default.jpg', '$2y$10$AFZ37WAaiTh.tBoOaoIPvOhfzPKOagEzIAxLU71g6PamqDWghPZ.S', 2, 1, 1587379276);
 
 -- --------------------------------------------------------
 
@@ -91,18 +87,16 @@ CREATE TABLE `medcek` (
   `img_bukti` varchar(128) DEFAULT NULL,
   `tgl_periksa` varchar(128) NOT NULL,
   `tgl_ambil` varchar(128) NOT NULL,
-  `status` int(1) NOT NULL
+  `status` int(1) NOT NULL,
+  `hasil_lab` varchar(128) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `medcek`
 --
 
-INSERT INTO `medcek` (`id`, `id_pasien`, `nama_pasien`, `tgl_lahir`, `layanan`, `cabang`, `alamat`, `nomor_hp`, `img_bukti`, `tgl_periksa`, `tgl_ambil`, `status`) VALUES
-(6, 'MC-4', 'M. Daffa Haris', '2000-02-10', 'cek Darah', 'Cabang Surakarta', 'Sukabirus, Surakarta', '000000000', '', '19 April 2020', '22 April 2020', 2),
-(7, 'MC-4', 'Mochammad Daffa Haris', '2000-10-20', 'cek Darah', 'Cabang Surakarta', 'Sukabirus, Surakarta', '1234567890', NULL, '20 April 2020', '23 April 2020', 0),
-(8, 'MC-4', 'Mochammad Daffa Haris', '2000-02-20', 'cek Urin', 'Cabang Bekasi', 'Sukabirus, Surakarta', '123456890', NULL, '20 April 2020', '23 April 2020', 0),
-(9, 'MC-13', 'finishing', '2000-10-28', 'cek Urin', 'Cabang Bekasi', 'Sukabirus, Bandung', '08111512711', 'logo.jpg', '20 April 2020', '23 April 2020', 1);
+INSERT INTO `medcek` (`id`, `id_pasien`, `nama_pasien`, `tgl_lahir`, `layanan`, `cabang`, `alamat`, `nomor_hp`, `img_bukti`, `tgl_periksa`, `tgl_ambil`, `status`, `hasil_lab`) VALUES
+(4, 'MC-3', 'Afif Raihan', '2000-11-27', 'Cek Darah dan Urin', 'Cabang Surakarta', 'Solo', '08111512711', 'lingkaran_merah_tengah3.png', '22 April 2020', '25 April 2020', 2, 'Input_hasil_(1).pdf');
 
 --
 -- Indexes for dumped tables
@@ -134,7 +128,7 @@ ALTER TABLE `medcek`
 -- AUTO_INCREMENT for table `akun`
 --
 ALTER TABLE `akun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `akun_role`
@@ -146,7 +140,7 @@ ALTER TABLE `akun_role`
 -- AUTO_INCREMENT for table `medcek`
 --
 ALTER TABLE `medcek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
