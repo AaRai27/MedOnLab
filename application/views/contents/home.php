@@ -52,7 +52,7 @@
     				<div class="container">
     					<div class="col-md-8">
     						<ul class="list-group list-group-flush why-us-content">
-    							<li class="list-group-item mt-1 rounded">Kemanan Data Terjamin</li>
+    							<li class="list-group-item mt-1 rounded">Keamanan Data Terjamin</li>
     							<li class="list-group-item mt-1 rounded"> Hasil Tes Tepat Waktu</li>
     							<li class="list-group-item mt-1 rounded"> Dokter Telah Tersertifikasi IDI</li>
     							<li class="list-group-item mt-1 rounded"> Alat- alat Sesuai Standar Internasional</li>
@@ -245,99 +245,140 @@
     	</div>
     </div>
 
+    <!-- <div class="container dokter">
+    	<div class="row dokter-kami mb-4">
+    		<h2 style="font-family: 'Montserrat', sans-serif;font-weight: 700">Dokter Kami</h2>
+    	</div>
+    	<div class="row dokter-kami justify-content-center">
+    		<div class="card mb-3 mr-3" style="width: 18rem;">
+    			<img src="<?= base_url('assets/img/ray.jpg') ?>" class="card-img-top" alt="...">
+    			<div class="card-body">
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			</div>
+    		</div>
+    		<div class="card mb-3 mr-3" style="width: 18rem;">
+    			<img src="<?= base_url('assets/img/ale.jpg') ?>" class="card-img-top" alt="...">
+    			<div class="card-body">
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			</div>
+    		</div>
+    		<div class="card mb-3 mr-3" style="width: 18rem;">
+    			<img src="<?= base_url('assets/img/rijal.jpg') ?>" class="card-img-top" alt="...">
+    			<div class="card-body">
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			</div>
+    		</div>
+    		<div class="card mb-3 mr-3" style="width: 18rem;">
+    			<img src="<?= base_url('assets/img/daffa.jpg') ?>" class="card-img-top" alt="...">
+    			<div class="card-body">
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			</div>
+    		</div>
+    		<div class="card mb-3 mr-3" style="width: 18rem;">
+    			<img src="..." class="card-img-top" alt="...">
+    			<div class="card-body">
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    			</div>
+    		</div>
+
+    	</div>
+    </div> -->
+
 
 
     <!-- Modal  -->
-    <div class="modal fade" id="registrasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-info text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Registrasi</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-    			</div>
-    			<div class="modal-body">
-    				<p>Jika Anda Belum Mendaftar menjadi member Kami,</p>
-    				<p> klik tombol <b>Registrasi</b> pada navbar bagian kanan atas</p>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-info text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Login</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-    			</div>
-    			<div class="modal-body">
-    				<p>Jika anda sudah Memiliki Akun atau Sudah Registrasi</p>
-    				Silahkan <b>Login</b> dengan klik tombol login pada navbar bagian kanan
+    <div class="modal-alur">
+    	<div class="modal fade" id="registrasi" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-info text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Registrasi</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					<p>Jika Anda Belum Mendaftar menjadi member Kami,</p>
+    					<p> klik tombol <b>Registrasi</b> pada navbar bagian kanan atas</p>
+    				</div>
     			</div>
     		</div>
     	</div>
-    </div>
-    <div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-success text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Daftar</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-    			</div>
-    			<div class="modal-body">
-    				Anda Bisa Mendaftar Medical Check Up Dengan klik Tombol pendaftaran
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="modal fade" id="puasa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-success text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Puasa</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-    			</div>
-    			<div class="modal-body">
-    				<p>Sebelum Datang Ke Dokter Untuk Medical Check Up Anda Diharapkan <b>berpuasa</b> terlebih dahulu <b>1 hari</b> sebelum tanggal periksa</p>
-    				<p>Cek Jadwal Periksa Anda Pada Menu <b>Cek Status</b> </p>
+    	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-info text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Login</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					<p>Jika anda sudah Memiliki Akun atau Sudah Registrasi</p>
+    					Silahkan <b>Login</b> dengan klik tombol login pada navbar bagian kanan
+    				</div>
     			</div>
     		</div>
     	</div>
-    </div>
-    <div class="modal fade" id="datang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-warning text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Datang</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
-    			</div>
-    			<div class="modal-body">
-    				<p>Setelah Mendaftar Dan Berpuasa 1 Hari, silahkan Datang ke Dokter untuk Melakukan Medical Check Up</p>
-    				<p>Silahkan Datang Pada <b>Tanggal Yang Sudah Ditentukan</b> Di Menu <b>Cek Status</b></p>
+    	<div class="modal fade" id="daftar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-success text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Daftar</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					Anda Bisa Mendaftar Medical Check Up Dengan klik Tombol pendaftaran
+    				</div>
     			</div>
     		</div>
     	</div>
-    </div>
-    <div class="modal fade" id="hasil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    	<div class="modal-dialog" role="document">
-    		<div class="modal-content">
-    			<div class="modal-header bg-warning text-white">
-    				<h5 class="modal-title" id="exampleModalLabel">Hasil Medical Check Up</h5>
-    				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-    					<span aria-hidden="true">&times;</span>
-    				</button>
+    	<div class="modal fade" id="puasa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-success text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Puasa</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					<p>Sebelum Datang Ke Dokter Untuk Medical Check Up Anda Diharapkan <b>berpuasa</b> terlebih dahulu <b>1 hari</b> sebelum tanggal periksa</p>
+    					<p>Cek Jadwal Periksa Anda Pada Menu <b>Cek Status</b> </p>
+    				</div>
     			</div>
-    			<div class="modal-body">
-    				<p>Hasil Medical Check Up Akan Keluar 2-3 Hari setelah pemeriksaan</p>
+    		</div>
+    	</div>
+    	<div class="modal fade" id="datang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-warning text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Datang</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					<p>Setelah Mendaftar Dan Berpuasa 1 Hari, silahkan Datang ke Dokter untuk Melakukan Medical Check Up</p>
+    					<p>Silahkan Datang Pada <b>Tanggal Yang Sudah Ditentukan</b> Di Menu <b>Cek Status</b></p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="modal fade" id="hasil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    		<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+    				<div class="modal-header bg-warning text-white">
+    					<h5 class="modal-title" id="exampleModalLabel">Hasil Medical Check Up</h5>
+    					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    						<span aria-hidden="true">&times;</span>
+    					</button>
+    				</div>
+    				<div class="modal-body">
+    					<p>Hasil Medical Check Up Akan Keluar 2-3 Hari setelah pemeriksaan</p>
+    				</div>
     			</div>
     		</div>
     	</div>

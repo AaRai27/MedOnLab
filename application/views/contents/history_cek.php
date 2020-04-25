@@ -50,6 +50,7 @@
                                         <a href="<?= base_url('user/cek_status/') . $m['id'] ?>" type="button" class="btn btn-info">Details</a>
                                         <a href="<?= base_url('user/edit_medcheck/') . $m['id']; ?>" type="button" class="btn btn-primary">Edit</a>
                                         <a href="<?= base_url('upload/do_upload/') . $m['id'] ?>" type="button" class="btn btn-success">Bayar</a>
+                                        <a href="<?= base_url('user/hapus_medcheck/') . $m['id'] ?>" type="button" class="btn btn-danger">Batal</a>
                                     </div>
                                 </td>
                             <?php elseif ($m['status'] == 1) : ?>

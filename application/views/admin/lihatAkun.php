@@ -1,9 +1,9 @@
-	<div class="row" style="min-height: 37rem">
-		<div class="col-md-12">
-			<div class="col-md-11 justify-content-center mx-auto">
+	<div class="container">
+		<div class="row" style="min-height: 37rem">
+			<div class="col-md-12">
 				<div>
-					<div class="container text-center">
-						<h3>Daftar Account</h3>
+					<div class="text-center mt-4">
+						<h3><?php echo $title ?></h3>
 					</div>
 					<div class="container text-right">
 						<a href="<?= base_url('admin/tambah_akun') ?>" class="btn btn-primary">Add Data</a>

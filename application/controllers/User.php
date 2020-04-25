@@ -51,8 +51,13 @@ class User extends CI_Controller
     {
         $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
         $data['title'] = "Info Kesehatan";
+        $ambilJson = file_get_contents('./assets/js/infoKesehatan.json');
+        $data['berita'] = json_decode($ambilJson, true);
+        $data['news'] = $data['berita']['berita'];
+
+
         $this->load->view('templates/header', $data);
-        $this->load->view('contents/infosehat');
+        $this->load->view('contents/infosehat', $data);
         $this->load->view('templates/footer');
     }
 
@@ -123,6 +128,23 @@ class User extends CI_Controller
             $this->load->view('templates/header', $data);
             $this->load->view('contents/lihatProfile', $data);
             $this->load->view('templates/footer');
+        } else {
+            redirect('auth');
+        }
+    }
+
+    public function hapus_medcheck($id)
+    {
+        $data['user'] = $this->db->get_where('akun', ['email' => $this->session->userdata('email')])->row_array();
+
+        if ($data['user']) {
+            $this->load->view('templates/header');
+            $this->load->view('templates/footer');
+            $cek = $this->ModelUser->delete_medcheck($id);
+            $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-dismissible fade show" role="alert">Pendaftaran Berhasil Dibatalkan<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button> </div>');
+            redirect('user');
         } else {
             redirect('auth');
         }

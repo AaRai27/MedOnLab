@@ -1,0 +1,173 @@
+{
+	"berita": [{
+			"judul": "Suka Berbuka Puasa dengan Kurma? Ini Khasiat Bagi Kesehatan - beritabeta",
+			"link": "https://beritabeta.com/info-sehat/suka-berbuka-puasa-dengan-kurma-ini-khasiat-bagi-kesehatan/",
+			"gambar": "https://beritabeta.com/wp-content/uploads/2020/04/Kurma.jpg"
+		},
+		{
+			"judul": "Sempat Alami Sesak Napas, Caesar Hito Parno Kena Corona - MataMata.com - matamata.com",
+			"link": "https://www.matamata.com/seleb/2020/04/24/213000/sempat-alami-sesak-napas-caesar-hito-parno-kena-corona",
+			"gambar": "https://media.matamata.com/thumbs/2019/12/26/22924-caesar-hito-dan-felicya-angelista/745x489-img-22924-caesar-hito-dan-felicya-angelista.jpg"
+		},
+		{
+			"judul": "Top 3 Tekno Berita Hari Ini: Efek Chloroquine, Planet Bertabrakan - Tempo",
+			"link": "https://tekno.tempo.co/read/1335330/top-3-tekno-berita-hari-ini-efek-chloroquine-planet-bertabrakan",
+			"gambar": "https://statik.tempo.co/data/2020/04/16/id_931073/931073_720.jpg"
+		},
+		{
+			"judul": "Gizi Seimbang, Penderita Diabetes Wajib Lakukan Ini saat Puasa - GenPI.co",
+			"link": "https://www.genpi.co/berita/44789/gizi-seimbang-penderita-diabetes-wajib-lakukan-ini-saat-puasa",
+			"gambar": "http://fs.genpi.co//uploads/data/images/2020/04/diabetes7.png"
+		},
+		{
+			"judul": "WHO Peringatkan Risiko Penghentian Imunisasi di Tengah Pandemi COVID-19 - Liputan6.com",
+			"link": "https://www.liputan6.com/health/read/4236372/who-peringatkan-risiko-penghentian-imunisasi-di-tengah-pandemi-covid-19",
+			"gambar": "https://cdn1-production-images-kly.akamaized.net/MyDfzLXGusE5gv-s6CP-K8F1nMk=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2377774/original/009378100_1538998229-Kepala_WHO_AFP.jpg"
+		},
+		{
+			"judul": "Kurangi Risiko Komplikasi, Obat Diabetes Diuji ke Pasien COVID-19 - sukabumiupdate",
+			"link": "https://sukabumiupdate.com/detail/ototekno/iptek/68431-Kurangi-Risiko-Komplikasi-Obat-Diabetes-Diuji-ke-Pasien-COVID-19",
+			"gambar": "https://sukabumiupdate.com/uploads/news/images/770x413/-_200424152953-870.jpg"
+		},
+		{
+			"judul": "Ahli Kesehatan Masyarakat Sebut Pola Penularan Covid-19 Bisa Berubah - Kompas.com - KOMPAS.com",
+			"link": "https://nasional.kompas.com/read/2020/04/24/20491681/ahli-kesehatan-masyarakat-sebut-pola-penularan-covid-19-bisa-berubah",
+			"gambar": "https://asset.kompas.com/crops/ORl-MaNpXBAXwCxX4PZJLGEL9lU=/0x0:434x289/780x390/filters:watermark(data/photo/2020/03/10/5e6775ae18c31.png,0,-0,1)/data/photo/2020/03/26/5e7c626d24bbb.jpg"
+		},
+		{
+			"judul": "Oatmeal Sayuran hingga Ikan Jadi Menu Sahur yang Tepat untuk Penderita Kolesterol Tinggi - Tribunnews.com",
+			"link": "https://www.tribunnews.com/kesehatan/2020/04/24/oatmeal-sayuran-hingga-ikan-jadi-menu-sahur-yang-tepat-untuk-penderita-kolesterol-tinggi",
+			"gambar": "https://cdn2.tstatic.net/tribunnews/foto/bank/images/nutrive-310120-2.jpg"
+		},
+		{
+			"judul": "Tips Lansia Tetap Aman di Dunia Maya - Bisnis.com",
+			"link": "https://lifestyle.bisnis.com/read/20200424/106/1232387/tips-lansia-tetap-aman-di-dunia-maya",
+			"gambar": "https://cdn-image.bisnis.com/posts/2020/04/24/1232387/orangtua-lansia.jpg"
+		},
+		{
+			"judul": "Dua Benda Asteroid Seukuran Planet Saling Bertabrakan di Antariksa - Notif Indonesia",
+			"link": "https://notif.id/2020/13453/news/dua-benda-asteroid-seukuran-planet-saling-bertabrakan-di-antariksa/",
+			"gambar": "https://notif.id/wp-content/uploads/2020/04/tabrakan-kosmis.jpg"
+		},
+		{
+			"judul": "Buah-buahan yang Aman untuk Dikonsumsi Penderita GERD - Tribunnews",
+			"link": "https://www.tribunnews.com/kesehatan/2020/04/24/buah-buahan-yang-aman-untuk-dikonsumsi-penderita-gerd",
+			"gambar": "https://cdn2.tstatic.net/tribunnews/foto/bank/images/ilustrasi-cara-mengobati-asam-lambung-secara-alami.jpg"
+		},
+		{
+			"judul": "Penyakit Zoonosis Ternyata Bisa Ditularkan dari Hewan Ternak - Bisnis.com",
+			"link": "https://lifestyle.bisnis.com/read/20200424/106/1232436/penyakit-zoonosis-ternyata-bisa-ditularkan-dari-hewan-ternak",
+			"gambar": "https://cdn-image.bisnis.com/posts/2020/04/24/1232436/antarafoto-kenaikan-harga-acuan-telur-dan-daging-ayam-130220-ysw-1a.jpg"
+		},
+		{
+			"judul": "Ini Tanda Anak Disleksia dan Cara Mengatasinya - Bisnis.com",
+			"link": "https://lifestyle.bisnis.com/read/20200424/236/1232380/ini-tanda-anak-disleksia-dan-cara-mengatasinya",
+			"gambar": "https://cdn-image.bisnis.com/posts/2020/04/24/1232380/disleksia-ilustrasi.jpg"
+		},
+		{
+			"judul": "Pengujian Vaksin Virus Corona (COVID-19) akan Melibatkan 200 Orang | otosia.com - Otosia.com",
+			"link": "https://www.otosia.com/berita/pengujian-vaksin-virus-corona-covid-19-akan-melibatkan-200-orang.html",
+			"gambar": "https://cdns.klimg.com/otosia.com/resized/650x325/p/headline/650x325/0000474709.jpg"
+		},
+		{
+			"judul": "Kabar Baik, Virus Corona Cepat Mati dengan Sinar Matahari - dara.co.id",
+			"link": "https://www.dara.co.id/kabar-baik-virus-corona-cepat-mati-dengan-sinar-matahari.html",
+			"gambar": "https://i2.wp.com/www.dara.co.id/wp-content/uploads/2020/04/matahari-1.jpg?fit=640%2C360&ssl=1"
+		},
+		{
+			"judul": "Jalan Desa Jabalsari Tulungagung Dipalang Bambu, Warga Wajib Melapor Jika Akan Keluar Kampung - Surya",
+			"link": "https://surabaya.tribunnews.com/2020/04/24/jalan-desa-jabalsari-tulungagung-dipalang-bambu-warga-wajib-melapor-jika-akan-keluar-kampung",
+			"gambar": "https://cdn2.tstatic.net/surabaya/foto/bank/images/jalan-desa-jabalsari-dipalang-bambu.jpg"
+		},
+		{
+			"judul": "Universitas Oxford Optimistis Vaksin Corona COVID-19 Akan Berhasil - Liputan6.com",
+			"link": "https://www.liputan6.com/global/read/4236432/universitas-oxford-optimistis-vaksin-corona-covid-19-akan-berhasil",
+			"gambar": "https://cdn0-production-images-kly.akamaized.net/HnXRl80eSUSZcpX53nsAHfXrmhE=/673x379/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3092086/original/099920300_1585819412-shutterstock_1654957318.jpg"
+		},
+		{
+			"judul": "Ini Alasan Sebaiknya Tak Langsung Konsumsi Makanan Berat Saat Buka Puasa - detikHealth",
+			"link": "https://health.detik.com/berita-detikhealth/d-4990187/ini-alasan-sebaiknya-tak-langsung-konsumsi-makanan-berat-saat-buka-puasa",
+			"gambar": "https://awsimages.detik.net.id/api/wm/2020/04/20/a7ccdd20-170c-4e45-a05c-483c84dc1526_169.jpeg?wid=54&w=650&v=1&t=jpeg"
+		},
+		{
+			"judul": "Ramadan: Kiat puasa dengan aman saat pandemi virus corona - BBC News Indonesia",
+			"link": "https://www.bbc.com/indonesia/majalah-52407086",
+			"gambar": "https://ichef.bbci.co.uk/news/1024/branded_indonesia/3690/production/_111886931_gettyimages-1147629349.jpg"
+		},
+		{
+			"judul": "Jaga Kondisi Tubuh Tetap Sehat Selama Ramadan, Lakukan 5 Tips Puasa Sehat Ini - Tribun Manado",
+			"link": "https://manado.tribunnews.com/2020/04/24/jaga-kondisi-tubuh-tetap-sehat-selama-ramadan-lakukan-5-tips-puasa-sehat-ini",
+			"gambar": "https://cdn2.tstatic.net/manado/foto/bank/images/ucapan-selamat-menunaikan-puasa-ramadan-1441-hijriah-666.jpg"
+		},
+		{
+			"judul": "5 Tips Aman Berolahraga di Tengah Pandemi Corona",
+			"link": "https://health.detik.com/kebugaran/d-4957022/5-tips-aman-berolahraga-di-tengah-pandemi-corona",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2019/04/14/1add0688-68ad-408e-934b-a6af25e0ad4b_169.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "170 Orang Meninggal, Tingkat Kematian Corona RI Bertahan di 9,3 Persen",
+			"link": "https://health.detik.com/berita-detikhealth/d-4962703/170-orang-meninggal-tingkat-kematian-corona-ri-bertahan-di-93-persen",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/03/06/7f925d7e-a472-4676-95bf-6b93c7acf8b1_169.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "Hallo Warga Bandung, Bisa Ambil Disinfektan Gratis Nih Disini",
+			"link": "https://news.detik.com/foto-news/d-4963074/hallo-warga-bandung-bisa-ambil-disinfektan-gratis-nih-disini?_ga=2.138576881.316534084.1585835336-1189805607.1571666073",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/04/02/84a82b74-f7d5-46d6-bd27-e0fce82d438d.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "Lakukan 5 Hal Ini agar Terhindar dari Virus Corona",
+			"link": "https://health.detik.com/berita-detikhealth/d-4962993/lakukan-5-hal-ini-agar-terhindar-dari-virus-corona?_ga=2.243879751.316534084.1585835336-1189805607.1571666073",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/03/26/6633da37-a04b-425c-9ab8-9951fbb59a7e_169.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "65 PNS Alami Gejala Corona, 3 Dipastikan Positif",
+			"link": "https://finance.detik.com/berita-ekonomi-bisnis/d-4962921/65-pns-alami-gejala-corona-3-dipastikan-positif?_ga=2.248131525.316534084.1585835336-1189805607.1571666073",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2018/12/14/0ec00bc4-db65-43c2-b84c-56da4e1ea8f4_169.jpeg?w=700&q=80"
+		},
+		{
+			"judul": "Arak Bali Siap Lawan Corona",
+			"link": "https://health.detik.com/fotohealth/d-4962508/arak-bali-siap-lawan-corona",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/04/02/367afa79-ec06-48b5-b03d-65d3f65b2337.jpeg?w=700&q=80"
+		},
+		{
+			"judul": "Puluhan Kapolsek di Surabaya Ikut Rapid Test, Semua Negatif Corona",
+			"link": "https://news.detik.com/berita-jawa-timur/d-4963140/puluhan-kapolsek-di-surabaya-ikut-rapid-test-semua-negatif-corona?_ga=2.213147734.316534084.1585835336-1189805607.1571666073",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/04/02/86ef4956-11c2-453e-8e1a-36979b6c6167_43.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "4 Alasan Sehat Kenapa Kamu Wajib Sarapan Telur Setiap Hari",
+			"link": "https://health.detik.com/diet/d-4947904/4-alasan-sehat-kenapa-kamu-wajib-sarapan-telur-setiap-hari",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2016/12/01/5e80bd8a-d6e6-4c34-bb63-8d23b5ab6665_169.jpg?w=700&q=90"
+		},
+		{
+			"judul": "4 Resep Jus untuk Cegah Virus Corona",
+			"link": "https://health.detik.com/diet/d-4946435/4-resep-jus-untuk-cegah-virus-corona",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2019/02/15/a3e3bb80-ba2c-4152-b356-a5746ab7a6a7_169.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "Tips Masakan Sehat Rendah Lemak untuk Cemilan 'Work From Home'",
+			"link": "https://health.detik.com/diet/d-4945126/tips-masakan-sehat-rendah-lemak-untuk-cemilan-work-from-home",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/03/19/47874b13-e4e6-4fd6-bcab-e3003697bf89_169.png?w=700&q=90"
+		},
+		{
+			"judul": "5 Cemilan Sehat Agar Badan Tak Melar Saat 'Work from Home'",
+			"link": "https://health.detik.com/diet/d-4943638/5-cemilan-sehat-agar-badan-tak-melar-saat-work-from-home",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2019/09/16/5c02b714-6e20-4cdc-9673-fc0fe2cda53a_169.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "Bantu Tenaga Medis, Sejumlah Desainer Indonesia Kompak Bikin Hazmat",
+			"link": "https://wolipop.detik.com/fashion-news/d-4962861/bantu-tenaga-medis-sejumlah-desainer-indonesia-kompak-bikin-hazmat",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2020/03/28/6e93e6d3-4df1-4867-ad5b-f768356b6c72_43.jpeg?w=700&q=90"
+		},
+		{
+			"judul": "3 Cara Memakai dan Membersihkan Alat Makeup Agar Terhindar dari Corona",
+			"link": "https://wolipop.detik.com/makeup-and-skincare/d-4962478/3-cara-memakai-dan-membersihkan-alat-makeup-agar-terhindar-dari-corona",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2016/09/28/3f0a2408-b181-4029-9bc2-89634bfeb32e_43.jpg?w=700&q=90"
+		},
+		{
+			"judul": "3 Perawatan Tubuh yang Perlu Dilakukan untuk Cegah Corona",
+			"link": "https://wolipop.detik.com/makeup-and-skincare/d-4961452/3-perawatan-tubuh-yang-perlu-dilakukan-untuk-cegah-corona",
+			"gambar": "https://akcdn.detik.net.id/community/media/visual/2017/09/14/96e39301-ff9c-4c77-978a-235cc77030d3_43.jpg?w=480"
+		}
+	]
+}

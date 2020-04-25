@@ -26,9 +26,9 @@
     					<button type="submit">Login</button>
     					<br><br>
     					<p>Don't have an account? <a href="<?= base_url('auth/registration') ?>"> Register Here</a></p>
-
     				</form>
     			</div>
+    			<?= validation_errors(); ?>
     		</div>
     	</div>
     </div>

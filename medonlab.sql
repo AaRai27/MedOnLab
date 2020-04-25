@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2020 at 01:45 PM
+-- Generation Time: Apr 25, 2020 at 09:40 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -48,7 +48,7 @@ CREATE TABLE `akun` (
 INSERT INTO `akun` (`id`, `id_pasien`, `fullname`, `username`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
 (1, 'MC-1', 'Muhammad Afif Raihan', 'Mafifraihan', 'raihangeorgia@gmail.com', 'default.jpg', '$2y$10$FNlbXGlsFaFv4uF5IRYum.bKQirbRRrKzEzJ0mfneScGaE87NWKOu', 1, 1, 1587013176),
 (2, 'MC-2', 'Rayhan Aja', 'Ray', 'rayrahmanda@gmail.com', 'default1.jpg', '$2y$10$I3im0rRASsluDAFsjkkxqeT67meplbBp3wC1wZpV13jaJ5yO1ZaJ6', 2, 1, 1587013215),
-(14, 'MC-3', 'Afif Raihan', 'afifraihan', 'afifraihan@gmail.com', 'default.jpg', '$2y$10$AFZ37WAaiTh.tBoOaoIPvOhfzPKOagEzIAxLU71g6PamqDWghPZ.S', 2, 1, 1587379276);
+(14, 'MC-3', 'Afif Raihan', 'afifraihan', 'afifraihan@gmail.com', 'lingkaran_merah_tengah2.png', '$2y$10$AFZ37WAaiTh.tBoOaoIPvOhfzPKOagEzIAxLU71g6PamqDWghPZ.S', 2, 1, 1587379276);
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,8 @@ CREATE TABLE `medcek` (
 --
 
 INSERT INTO `medcek` (`id`, `id_pasien`, `nama_pasien`, `tgl_lahir`, `layanan`, `cabang`, `alamat`, `nomor_hp`, `img_bukti`, `tgl_periksa`, `tgl_ambil`, `status`, `hasil_lab`) VALUES
-(4, 'MC-3', 'Afif Raihan', '2000-11-27', 'Cek Darah dan Urin', 'Cabang Surakarta', 'Solo', '08111512711', 'lingkaran_merah_tengah3.png', '22 April 2020', '25 April 2020', 2, 'Input_hasil_(1).pdf');
+(4, 'MC-3', 'Afif Raihan', '2000-11-27', 'Cek Darah dan Urin', 'Cabang Surakarta', 'Solo', '08111512711', 'lingkaran_merah_tengah3.png', '22 April 2020', '25 April 2020', 2, 'Input_hasil_(1).pdf'),
+(7, 'MC-3', 'Afif Raihan', '2000-11-27', 'Cek Darah dan Urin', 'Cabang Bandung', 'Sukabirus, Bandung', '08111512711', NULL, '27 April 2020', '30 April 2020', 0, NULL);
 
 --
 -- Indexes for dumped tables
@@ -140,7 +141,7 @@ ALTER TABLE `akun_role`
 -- AUTO_INCREMENT for table `medcek`
 --
 ALTER TABLE `medcek`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

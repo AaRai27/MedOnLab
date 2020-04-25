@@ -47,7 +47,7 @@ class Auth extends CI_Controller
                         redirect('user');
                     }
                 } else {
-                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Wrong Password</div>');
+                    $this->session->set_flashdata('pesan', '<div class="alert alert-danger" role="alert">Wrong Username/Password</div>');
                     redirect('auth');
                 }
             } else {

@@ -66,4 +66,10 @@ class ModelUser extends CI_Model
         $this->db->where('id', $id);
         return $this->db->update('medcek', $data);
     }
+
+    public function delete_medcheck($id)
+    {
+        $this->db->where('id', $id);
+        return $this->db->delete('medcek');
+    }
 }

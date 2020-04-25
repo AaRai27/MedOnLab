@@ -51,6 +51,9 @@ function add() {
 	swal("Added!", "Your Data has been added.", "success");
 }
 
+
+
+// ------------------jquery-------------------------
 $(document).ready(function () {
 
 	var current_fs, next_fs, previous_fs; //fieldsets
@@ -146,4 +149,36 @@ $(document).ready(function () {
 			className: 'mdl-data-table__cell--non-numeric'
 		}]
 	});
+
+
+	// $.getJSON('infoKesehatan.json', function (data) {
+	// 	let berita = data.berita;
+	// 	$.each(berita, function (i, data) {
+	// 		console.log(berita);
+	// 		// $('#daftar-berita').append('<div class="col-md-6"><div class="card"><div class="card-header"><img src="' + data.gambar + '" class="d-block w-100"></div><div class="card-body"><h5 class="card-title">' + data.judul + '</h5><p class="card-text">' + data.kategori + '</p><a href="' + data.link + '" class="btn btn-primary" target="_blank">Go somewhere</a></div></div></div>')
+
+	// 	});
+	// });
+
+	// $('.nav-infosehat').on('click', function () {
+	// 	$('.nav-infosehat').removeClass('active');
+	// 	$(this).addClass('active');
+
+	// 	let kategori = $(this).html();
+	// 	$('.judul-infosehat').html(kategori);
+
+	// 	console.log(kategori);
+	// $.getJSON('infoKesehatan.json', function (data) {
+	// 	let berita = data.berita;
+	// 	let content = '';
+
+	// 	console.log(berita);
+	// $.each(menu, function (i, data) {
+	// 	if (data.kategori == kategori.toLowerCase()) {
+	// 		content += '<div class="col-md-6 mb-3"><div class="card" style="height: 30rem"><img src="' + data.gambar + '" class="card-img-top img-thumbnail" style="height: 20rem"><div class="card-body"><h5 class="card-title">' + data.judul + '</h5><a href="' + data.link + '" class="btn btn-primary" target="_blank">Lihat Berita</a><p class="card-text text-right text-capitalize text-muted">' + data.kategori + '</p></div></div></div>'
+	// 	}
+	// });
+	// $('#daftar-berita').html(content);
+	// });
+	// });
 });

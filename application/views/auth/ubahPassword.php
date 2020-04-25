@@ -8,7 +8,7 @@
             </div>
         <?php endif; ?>
     </div>
-    <h2>Ubah Data</h2>
+    <h2>Ubah Password</h2>
     <hr>
     <?= form_open('auth/ubahPassword') ?>
     <div class="form-group">
